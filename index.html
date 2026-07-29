@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GAME</title>
+<link rel="stylesheet" href="game.css">
+</head>
+
+<body>
+
+<h1> SURVIVAL GAME</h1>
+<div id="instructions"></div>
+
+<!-- 12 tiles × 144 -->
+<canvas id="gameCanvas" width="1728" height="1728"></canvas>
+
+<img id="playerImg" src="player.png" hidden>
+<img id="enemy1Img" src="images.png" hidden>
+<img id="enemy2Img" src="images.png" hidden>
+<img id="enemy3Img" src="images.png" hidden>
+<img id="enemy4Img" src="images.png" hidden>
+<img id="enemy5Img" src="images.png" hidden>
+<img id="enemy6Img" src="images.png" hidden>
+<img id="winImg" src="door.png" hidden>
+<img id="gameOverImg" src="p.png" hidden>
+<audio id="moveSound" src="moveSound.mp3" preload="auto"></audio>
+<audio id="hitSound" src="hit.mp3" preload="auto"></audio>
+
+<script src="game.js"></script>
+</body>
+</html>
