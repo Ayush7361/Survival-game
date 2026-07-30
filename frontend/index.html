@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survival Game</title>
+
+    <link rel="stylesheet" href="game.css">
+</head>
+
+<body>
+
+    <h1>SURVIVAL GAME</h1>
+
+    <div id="instructions">
+        Use the arrow keys or the buttons below to move. Avoid the enemies.
+    </div>
+
+    <!-- 12 × 12 tiles -->
+    <canvas id="gameCanvas" width="1728" height="1728"></canvas>
+
+    <div class="mobile-controls">
+        <button id="upBtn" class="control-btn up-btn">↑</button>
+        <button id="leftBtn" class="control-btn left-btn">←</button>
+        <button id="downBtn" class="control-btn down-btn">↓</button>
+        <button id="rightBtn" class="control-btn right-btn">→</button>
+    </div>
+
+    <!-- Restart button -->
+    <button id="restartBtn" class="hidden">
+        Restart Game
+    </button>
+
+    <!-- Images -->
+    <img id="playerImg" src="player.png" hidden>
+
+    <img id="enemy1Img" src="images.png" hidden>
+    <img id="enemy2Img" src="images.png" hidden>
+    <img id="enemy3Img" src="images.png" hidden>
+    <img id="enemy4Img" src="images.png" hidden>
+    <img id="enemy5Img" src="images.png" hidden>
+    <img id="enemy6Img" src="images.png" hidden>
+
+    <img id="winImg" src="door.png" hidden>
+
+    <!-- Sounds -->
+    <audio id="moveSound" src="moveSound.mp3" preload="auto"></audio>
+    <audio id="hitSound" src="hit.mp3" preload="auto"></audio>
+
+    <script src="game.js"></script>
+
+</body>
+</html>
