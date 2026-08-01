@@ -71,7 +71,7 @@ function playHitSound() {
 // BACKEDN CONNECTION
 
 function sendScore(name, score) {
-  fetch("http://localhost:3000/api/leaderboard", {
+  fetch("https://survival-game-backend-98hj.onrender.com/api/leaderboard", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ name: name, score: score })
@@ -79,7 +79,7 @@ function sendScore(name, score) {
 }
 
 function getLeaderboard(callback) {
-  fetch("http://localhost:3000/api/leaderboard")
+  fetch("https://survival-game-backend-98hj.onrender.com/api/leaderboard")
     .then(function (res) {
       return res.json();
     })
