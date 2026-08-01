@@ -30,6 +30,7 @@ app.post('/api/leaderboard', (req, res) => {
   res.json({ message: "score added" });
 });
 
-app.listen(3000, () => {
-  console.log("leaderboard server running on port 3000");
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log("leaderboard server running on port " + PORT);
 });
